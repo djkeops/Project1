@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Project1</string>
+    <string name="description">The most comprehensive infoplatform on news and stocks operated by: \nBucharest Stock Exchange</string>
+    <string name="web_page">www.investingromania.com</string>
+    <string name="phone">(+40)(21) 307 95 00</string>
+    <string name="address">34 \- 36 Carol I Boulevard 020922, 14th Floor, Bucharest, Romania</string>
+    <string name="button_text">SIGN UP</string>
+</resources>

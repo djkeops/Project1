@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEDEDE"
+    android:orientation="vertical"
+    tools:context="com.example.android.project1.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/backgroundImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.25"
+            android:scaleType="fitXY"
+            android:src="@drawable/background" />
+
+        <!--image resource: https://www.investingromania.com-->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/logo_padding_top_land"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/descriptionView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/logoImageView"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="@string/description"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/webPageView"
+        style="@style/InfoTextView"
+        android:drawableLeft="@drawable/ic_web_black_24dp"
+        android:drawableStart="@drawable/ic_web_black_24dp"
+        android:onClick="webPage"
+        android:padding="@dimen/contact_info_padding_land"
+        android:paddingLeft="@dimen/contact_info_left_padding_land"
+        android:paddingStart="@dimen/contact_info_left_padding_land"
+        android:text="@string/web_page" />
+
+    <TextView
+        android:id="@+id/callView"
+        style="@style/InfoTextView"
+        android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+        android:drawableStart="@drawable/ic_local_phone_black_24dp"
+        android:onClick="call"
+        android:padding="@dimen/contact_info_padding_land"
+        android:paddingLeft="@dimen/contact_info_left_padding_land"
+        android:paddingStart="@dimen/contact_info_left_padding_land"
+        android:text="@string/phone" />
+
+    <TextView
+        android:id="@+id/addressView"
+        style="@style/InfoTextView"
+        android:drawableLeft="@drawable/ic_location_black_24dp"
+        android:drawableStart="@drawable/ic_location_black_24dp"
+        android:onClick="showAddress"
+        android:padding="@dimen/contact_info_padding_land"
+        android:paddingLeft="@dimen/contact_info_left_padding_land"
+        android:paddingStart="@dimen/contact_info_left_padding_land"
+        android:text="@string/address" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/button_margin"
+        android:backgroundTint="@color/colorAccent"
+        android:gravity="center"
+        android:onClick="signUp"
+        android:text="@string/button_text"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

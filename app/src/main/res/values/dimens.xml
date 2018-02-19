@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size">15sp</dimen>
+    <dimen name="description_top_margin_port">30dp</dimen>
+    <dimen name="drawable_padding">10dp</dimen>
+    <dimen name="button_margin">10dp</dimen>
+    <dimen name="contact_info_padding_port">10dp</dimen>
+    <dimen name="contact_info_padding_land">3dp</dimen>
+    <dimen name="contact_info_left_padding_land">10dp</dimen>
+    <dimen name="logo_padding_top_land">10dp</dimen>
+</resources>
