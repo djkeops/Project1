@@ -44,9 +44,5 @@ public class MainActivity extends AppCompatActivity {
             startActivity(browserIntent);
         }
     }
-    
-    private void test() {
-        int i = 1+1;
-    }
 
 }
